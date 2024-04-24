@@ -22,7 +22,7 @@
           <img src="./assets/icons/themify-icons/SVG/menu.svg" alt="" class="h-6 w-6">
         </div>
         <div class=" hidden md:inline-flex font-semibold text-[#666] ">
-          <a href="" class="px-4 py-6  hover:text-red-500 ">Home</a>
+          <a href="#home" class="px-4 py-6  hover:text-red-500 ">Home</a>
           <a href="" class="px-4 py-6  hover:text-red-500 ">Speciality</a>
           <a href="" class="px-4 py-6  hover:text-red-500 ">Popular</a>
           <a href="" class="px-4 py-6  hover:text-red-500 ">Gallery</a>
@@ -33,9 +33,10 @@
     </div>
   </div>
 
-  <!-- Food Made With Love -->
+  <!-- Home -->
   <div
-    class="container mx-auto py-20 px-5 flex flex-col gap-3 items-center md:flex-row md:flex-nowrap md:gap sm:h-[100vh]  bg-black/5">
+    class="container mx-auto py-20 px-5 flex flex-col gap-3 items-center md:flex-row md:flex-nowrap md:gap sm:h-[100vh]  bg-black/5"
+    id="home">
     <!-- Text -->
     <div class="flex-1">
       <div>
@@ -44,17 +45,14 @@
         </div>
         <div class="pl-4 py-6">
           <p class="text-xs text-[#666] lg:text-sm">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Voluptas
-            Accusamus
-            Tempore
-            Temporibus Rem Amet
-            Laudantium Animi Optio Voluptatum. Natus Obcaecati Unde Porro Nostrum Ipsam Itaque Impedit Incidunt Rem
-            Quisquam Eos!</p>
+            Accusamus Tempore Temporibus Rem Amet Laudantium Animi Optio Voluptatum. Natus Obcaecati Unde Porro Nostrum
+            Ipsam Itaque Impedit Incidunt Rem Quisquam Eos!</p>
         </div>
       </div>
       <div>
         <div>
           <button type="button"
-            class="border-2 border-[#ff3838] rounded-md w-fit py-[10px] px-[30px] text-xs text-[#ff3838] font-medium lg:text-sm">Order
+            class="border-2 border-[#ff3838] rounded-md w-fit py-[10px] px-[30px] text-xs text-[#ff3838] font-medium lg:text-sm hover:bg-[#ff3838] hover:text-white">Order
             Now</button>
         </div>
       </div>
@@ -62,6 +60,33 @@
     <!-- Hamburger -->
     <div class="flex justify-center md:flex-1">
       <img src="/assets/imgs/home-img.png" class="w-3/4 sm:w-full" alt="">
+    </div>
+  </div>
+
+  <!-- Speciality -->
+  <div class="container mx-auto px-5">
+    <!-- Text -->
+    <div class="text-center text-3xl font-semibold pt-[30px] pb-[25px]">
+      <p class="text-[#666]">Our <span class="text-[#ff3838]">Speciality</span></p>
+    </div>
+    <!-- Grid -->
+    <div class="grid grid-cols-1 gap-5">
+      <div class="border border-gray-400 rounded-xl px-[15px] py-[25px]">
+        <div class="flex justify-center">
+          <img src="/assets/imgs/s-1.png" alt="" class="w-[60px] h-[60px]">
+        </div>
+        <div>
+          <div class="flex justify-center py-[15px]">
+            <p class="text-[#333] font-semibold text-lg ">Tasty Burger</p>
+          </div>
+          <div class="flex justify-center">
+            <p class="text-xs text-[#666] font-semibold text-center">Tasty Burger Lorem Ipsum Dolor Sit Amet Consectetur
+              Adipisicing
+              Elit. Assumenda Inventore Neque Amet Ipsa Tenetur Voluptates Aperiam Tempore Libero Labore Aut.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </body>
