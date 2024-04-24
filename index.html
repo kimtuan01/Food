@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Food App</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/tailwind/config.js">
   <link rel="stylesheet" href="/assets/icons/themify-icons/themify-icons.css">
@@ -12,24 +12,56 @@
 
 <body class="relative">
   <!-- Header -->
-  <div class=" fixed shadow-lg w-full ">
-    <div class="container mx-auto px-6 flex justify-between items-center md:px-20">
+  <div class=" fixed shadow-lg w-full bg-white">
+    <div class="px-6 flex justify-between items-center md:px-20">
       <div class="font-semibold	text-3xl text-[#666] py-4">
         <a href="">Food</a>
       </div>
       <div class="">
         <div class=" p-4 md:hidden">
-          <img src="./assets/icons/themify-icons/SVG/menu.svg" alt="" class="h-8 w-8">
+          <img src="./assets/icons/themify-icons/SVG/menu.svg" alt="" class="h-6 w-6">
         </div>
         <div class=" hidden md:inline-flex font-semibold text-[#666] ">
-          <a href="" class="px-4 py-6 hover:text-red-500">Home</a>
-          <a href="" class="px-4 py-6 hover:text-red-500">Speciality</a>
-          <a href="" class="px-4 py-6 hover:text-red-500">Popular</a>
-          <a href="" class="px-4 py-6 hover:text-red-500">Gallery</a>
-          <a href="" class="px-4 py-6 hover:text-red-500">Review</a>
-          <a href="" class="px-4 py-6 hover:text-red-500">Order</a>
+          <a href="" class="px-4 py-6  hover:text-red-500 ">Home</a>
+          <a href="" class="px-4 py-6  hover:text-red-500 ">Speciality</a>
+          <a href="" class="px-4 py-6  hover:text-red-500 ">Popular</a>
+          <a href="" class="px-4 py-6  hover:text-red-500 ">Gallery</a>
+          <a href="" class="px-4 py-6  hover:text-red-500 ">Review</a>
+          <a href="" class="px-4 py-6  hover:text-red-500 ">Order</a>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Food Made With Love -->
+  <div
+    class="container mx-auto py-20 px-5 flex flex-col gap-3 items-center md:flex-row md:flex-nowrap md:gap sm:h-[100vh]  bg-black/5">
+    <!-- Text -->
+    <div class="flex-1">
+      <div>
+        <div class="pt-4">
+          <p class="text-3xl font-semibold md:text-4xl lg:text-5xl">Food Made With Love</p>
+        </div>
+        <div class="pl-4 py-6">
+          <p class="text-xs text-[#666] lg:text-sm">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Voluptas
+            Accusamus
+            Tempore
+            Temporibus Rem Amet
+            Laudantium Animi Optio Voluptatum. Natus Obcaecati Unde Porro Nostrum Ipsam Itaque Impedit Incidunt Rem
+            Quisquam Eos!</p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <button type="button"
+            class="border-2 border-[#ff3838] rounded-md w-fit py-[10px] px-[30px] text-xs text-[#ff3838] font-medium lg:text-sm">Order
+            Now</button>
+        </div>
+      </div>
+    </div>
+    <!-- Hamburger -->
+    <div class="flex justify-center md:flex-1">
+      <img src="/assets/imgs/home-img.png" class="w-3/4 sm:w-full" alt="">
     </div>
   </div>
 </body>
