@@ -12,7 +12,7 @@
 
 <body class="relative">
   <!-- Header -->
-  <div class=" fixed shadow-lg w-full bg-white">
+  <div class=" fixed shadow-lg w-full bg-white z-10">
     <div class="px-6 flex justify-between items-center md:px-20">
       <div class="font-semibold	text-3xl text-[#666] py-4">
         <a href="">Food</a>
@@ -35,25 +35,27 @@
 
   <!-- Home -->
   <div
-    class="container mx-auto py-20 px-5 flex flex-col gap-3 items-center md:flex-row md:flex-nowrap md:gap sm:h-[100vh]  bg-black/5"
+    class="py-20 px-5 xl:p-20 flex flex-col gap-3 items-center md:flex-row md:flex-nowrap xl:gap-28 sm:h-[100vh] bg-black/5"
     id="home">
     <!-- Text -->
     <div class="flex-1">
       <div>
         <div class="pt-4">
-          <p class="text-3xl font-semibold md:text-4xl lg:text-5xl">Food Made With Love</p>
+          <p class="text-3xl font-semibold md:text-4xl lg:text-5xl xl:text-6xl">Food Made With Love</p>
         </div>
-        <div class="pl-4 py-6">
-          <p class="text-xs text-[#666] lg:text-sm">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Voluptas
-            Accusamus Tempore Temporibus Rem Amet Laudantium Animi Optio Voluptatum. Natus Obcaecati Unde Porro Nostrum
+        <div class="pl-4 py-6 xl:px-[30px] xl:py-[60px]">
+          <p class="text-xs text-[#666] lg:text-base xl:text-lg">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing
+            Elit. Voluptas
+            Accusamus Tempore Temporibus Rem Amet Laudantium Animi Optio Voluptatum. Natus Obcaecati Unde Porro
+            Nostrum
             Ipsam Itaque Impedit Incidunt Rem Quisquam Eos!</p>
         </div>
       </div>
       <div>
         <div>
           <button type="button"
-            class="border-2 border-[#ff3838] rounded-md w-fit py-[10px] px-[30px] text-xs text-[#ff3838] font-medium lg:text-sm hover:bg-[#ff3838] hover:text-white">Order
-            Now</button>
+            class="border-2 border-[#ff3838] rounded-md w-fit py-[10px] px-[30px] text-xs text-[#ff3838] font-medium lg:text-sm xl:text-xl hover:bg-[#ff3838] hover:text-white">
+            Order Now</button>
         </div>
       </div>
     </div>
@@ -62,31 +64,128 @@
       <img src="/assets/imgs/home-img.png" class="w-3/4 sm:w-full" alt="">
     </div>
   </div>
-
   <!-- Speciality -->
-  <div class="container mx-auto px-5">
+  <div class="px-5 md:px-20 md:py-5 lg:px-5">
     <!-- Text -->
-    <div class="text-center text-3xl font-semibold pt-[30px] pb-[25px]">
+    <div class="text-center text-3xl md:text-5xl font-semibold pt-[30px] pb-[25px] lg:pb-10">
       <p class="text-[#666]">Our <span class="text-[#ff3838]">Speciality</span></p>
     </div>
     <!-- Grid -->
-    <div class="grid grid-cols-1 gap-5">
-      <div class="border border-gray-400 rounded-xl px-[15px] py-[25px]">
+    <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
+      <div class="border border-gray-400 rounded-xl px-[15px] py-[25px] relative group  shadow-2xl">
         <div class="flex justify-center">
           <img src="/assets/imgs/s-1.png" alt="" class="w-[60px] h-[60px]">
         </div>
         <div>
           <div class="flex justify-center py-[15px]">
-            <p class="text-[#333] font-semibold text-lg ">Tasty Burger</p>
+            <p class="text-[#333] font-semibold text-lg lg:text-2xl">Tasty Burger</p>
           </div>
           <div class="flex justify-center">
-            <p class="text-xs text-[#666] font-semibold text-center">Tasty Burger Lorem Ipsum Dolor Sit Amet Consectetur
+            <p class="text-xs text-[#666] font-semibold text-center  lg:text-sm">Lorem Ipsum Dolor Sit Amet
+              Consectetur
               Adipisicing
               Elit. Assumenda Inventore Neque Amet Ipsa Tenetur Voluptates Aperiam Tempore Libero Labore Aut.</p>
           </div>
         </div>
+        <div class="hidden group-hover:block absolute inset-0 ">
+          <img src="/assets/imgs/s-img-1.jpg" alt="" class="rounded-xl w-full h-full object-cover">
+        </div>
       </div>
-
+      <div class="border border-gray-400 rounded-xl px-[15px] py-[25px] relative group  shadow-2xl">
+        <div class="flex justify-center">
+          <img src="/assets/imgs/s-2.png" alt="" class="w-[60px] h-[60px]">
+        </div>
+        <div>
+          <div class="flex justify-center py-[15px]">
+            <p class="text-[#333] font-semibold text-lg lg:text-2xl">Tasty Pizza</p>
+          </div>
+          <div class="flex justify-center">
+            <p class="text-xs text-[#666] font-semibold text-center  lg:text-sm">Lorem Ipsum Dolor Sit Amet
+              Consectetur
+              Adipisicing
+              Elit. Assumenda Inventore Neque Amet Ipsa Tenetur Voluptates Aperiam Tempore Libero Labore Aut.</p>
+          </div>
+        </div>
+        <div class="hidden group-hover:block absolute inset-0">
+          <img src="/assets/imgs/s-img-2.jpg" alt="" class="rounded-xl w-full h-full object-cover">
+        </div>
+      </div>
+      <div class="border border-gray-400 rounded-xl px-[15px] py-[25px] relative group  shadow-2xl">
+        <div class="flex justify-center">
+          <img src="/assets/imgs/s-3.png" alt="" class="w-[60px] h-[60px]">
+        </div>
+        <div>
+          <div class="flex justify-center py-[15px]">
+            <p class="text-[#333] font-semibold text-lg lg:text-2xl">Cold Ice-Cream</p>
+          </div>
+          <div class="flex justify-center">
+            <p class="text-xs text-[#666] font-semibold text-center  lg:text-sm">Lorem Ipsum Dolor Sit Amet
+              Consectetur
+              Adipisicing
+              Elit. Assumenda Inventore Neque Amet Ipsa Tenetur Voluptates Aperiam Tempore Libero Labore Aut.</p>
+          </div>
+        </div>
+        <div class="hidden group-hover:block absolute inset-0">
+          <img src="/assets/imgs/s-img-3.jpg" alt="" class="rounded-xl w-full h-full object-cover">
+        </div>
+      </div>
+      <div class="border border-gray-400 rounded-xl px-[15px] py-[25px] relative group  shadow-2xl">
+        <div class="flex justify-center">
+          <img src="/assets/imgs/s-4.png" alt="" class="w-[60px] h-[60px]">
+        </div>
+        <div>
+          <div class="flex justify-center py-[15px]">
+            <p class="text-[#333] font-semibold text-lg lg:text-2xl">Cold Drinks</p>
+          </div>
+          <div class="flex justify-center">
+            <p class="text-xs text-[#666] font-semibold text-center  lg:text-sm">Lorem Ipsum Dolor Sit Amet
+              Consectetur
+              Adipisicing
+              Elit. Assumenda Inventore Neque Amet Ipsa Tenetur Voluptates Aperiam Tempore Libero Labore Aut.</p>
+          </div>
+        </div>
+        <div class="hidden group-hover:block absolute inset-0">
+          <img src="/assets/imgs/s-img-4.jpg" alt="" class="rounded-xl w-full h-full object-cover">
+        </div>
+      </div>
+      <div class="border border-gray-400 rounded-xl px-[15px] py-[25px] relative group  shadow-2xl">
+        <div class="flex justify-center">
+          <img src="/assets/imgs/s-5.png" alt="" class="w-[60px] h-[60px]">
+        </div>
+        <div>
+          <div class="flex justify-center py-[15px]">
+            <p class="text-[#333] font-semibold text-lg lg:text-2xl">Tasty Sweets</p>
+          </div>
+          <div class="flex justify-center">
+            <p class="text-xs text-[#666] font-semibold text-center  lg:text-sm">Lorem Ipsum Dolor Sit Amet
+              Consectetur
+              Adipisicing
+              Elit. Assumenda Inventore Neque Amet Ipsa Tenetur Voluptates Aperiam Tempore Libero Labore Aut.</p>
+          </div>
+        </div>
+        <div class="hidden group-hover:block absolute inset-0">
+          <img src="/assets/imgs/s-img-5.jpg" alt="" class="rounded-xl w-full h-full object-cover">
+        </div>
+      </div>
+      <div class="border border-gray-400 rounded-xl px-[15px] py-[25px] relative group  shadow-2xl">
+        <div class="flex justify-center">
+          <img src="/assets/imgs/s-6.png" alt="" class="w-[60px] h-[60px]">
+        </div>
+        <div>
+          <div class="flex justify-center py-[15px]">
+            <p class="text-[#333] font-semibold text-lg lg:text-2xl">Healthy Breakfast</p>
+          </div>
+          <div class="flex justify-center">
+            <p class="text-xs text-[#666] font-semibold text-center  lg:text-sm">Lorem Ipsum Dolor Sit Amet
+              Consectetur
+              Adipisicing
+              Elit. Assumenda Inventore Neque Amet Ipsa Tenetur Voluptates Aperiam Tempore Libero Labore Aut.</p>
+          </div>
+        </div>
+        <div class="hidden group-hover:block absolute inset-0 ">
+          <img src="/assets/imgs/s-img-6.jpg" alt="" class="rounded-xl w-full h-full object-cover">
+        </div>
+      </div>
     </div>
   </div>
 </body>
